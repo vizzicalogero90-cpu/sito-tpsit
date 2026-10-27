@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto TPSIT - Il Mio Sito Web</title>
+    <style>
+        /* CSS Reset e Stili Generali */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header e Navigazione */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4facfe;
+        }
+
+        /* Sezione Principale (Hero) */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: white;
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sezione Schede (Cards) */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2a5298;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>TPSIT Project</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#argomenti">Argomenti</a>
+            <a href="#about">Info</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Sviluppo Web e Reti</h2>
+        <p>Progetto scolastico realizzato per la materia TPSIT. Introduzione alle tecnologie fondamentali del Web moderno.</p>
+    </section>
+
+    <!-- Contenuto Principale -->
+    <div class="container" id="argomenti">
+        <div class="grid">
+            <div class="card">
+                <h3>HTML5</h3>
+                <p>La struttura di base di ogni pagina web. Definisce gli elementi semanticamente corretti come intestazioni, paragrafi e sezioni.</p>
+            </div>
+            <div class="card">
+                <h3>CSS3</h3>
+                <p>Si occupa della grafica, del layout e dello stile visivo. Permette di rendere i siti web moderni, colorati e adatti a ogni schermo (responsive).</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Il linguaggio di programmazione lato client che rende le pagine dinamiche e interattive, gestendo eventi e modifiche al DOM.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="about">
+        <p>&copy; 2026 Progetto TPSIT - Realizzato dallo Studente</p>
+    </footer>
+
+</body>
+</html>
